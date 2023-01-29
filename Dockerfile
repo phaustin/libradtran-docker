@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 # SEE: https://github.com/phusion/baseimage-docker/issues/58
 ARG DEBIAN_FRONTEND=noninteractive
@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     build-essential \
     gfortran \
-    python \
+    python2.7 \
     flex \
     libnetcdf-dev \
     libgsl-dev \

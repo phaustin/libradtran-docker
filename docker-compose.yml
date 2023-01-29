@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+  a301_image:
+    image: phaustin/libradtran_image:jan23
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NB_USER: jovyan
+        NB_UID: 1003
+        NB_GID: 2000
+    volumes:
+      - ./shared:/opt/libRadtran/shared      
+    container_name: libradtran_image
+    command: ["tail","-F","no_file"]

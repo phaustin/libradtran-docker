@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  a301_image:
+  librad_image:
     image: phaustin/libradtran_image:jan23
     build:
       context: .

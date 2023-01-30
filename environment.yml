@@ -1,0 +1,16 @@
+name: notebook
+channels:
+  - eoas_ubc
+  - conda-forge
+dependencies:
+  # NOTE: pip required for running tests in this repo
+  - python<3.11
+  - pip>=22.0
+  - numpy
+  - scipy
+  - git
+  - matplotlib
+  - mamba
+  - netcdf4
+  - conda-lock
+# conda-lock --kind explicit -f environment.yml -p linux-64
